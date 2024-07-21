@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background: #140b29;
+  color: #fff;
+}
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  animation: animation1 1s;
+}
+@keyframes animation2 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  width: 30vw;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+}
+.nav-links {
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.nav-links:hover {
+  text-decoration: underline;
+  letter-spacing: 8px;
+  opacity: 1;
+}
+.name {
+  font-size: 40px;
+  transition: 0.5s ease;
+  width: 20%;
+  font-weight: 400;
+}
+.name:hover {
+  transform: translateX(-50px);
+  letter-spacing: 4px;
+}
+#About {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  /* margin-top: -20px; */
+}
+.about-me {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+.myself {
+  justify-items: center;
+  align-content: center;
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+  animation: animation1 1s linear;
+  grid-column: 2/3;
+}
+span {
+  color: rgb(255, 51, 122);
+  opacity: 1;
+}
+img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 40vw;
+  height: 70vh;
+  animation: animation1 1s linear;
+  /* justify-items: center;
+    align-content: center; */
+  text-align: center;
+  margin-left: 40px;
+}
+@keyframes animation1 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
